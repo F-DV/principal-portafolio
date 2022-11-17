@@ -5,17 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <title>Portafolio</title>
 </head>
 <body>
     <header>
-        <h1>Hello i'm Feipe</h1>
-        <nav>Este es el navbar</nav>
+        <nav>
+            <!--Mobile - navbar-->
+            <div class="show-mobile-nav">
+                <div class="social-media">               
+                    <a class="linkedin" href="https://www.linkedin.com/in/felipe-quiceno-gomez-66a8791a0/">
+                        <img src="./assets/in_linked_linkedin_media_social_icon_124259.png" alt="">
+                    </a>
+
+                    <a class="github" href="https://github.com/F-DV">
+                        <img src="./assets/Github-Icon_icon-icons.com_52888.png" alt="">
+                    </a>              
+                    <a class="twiter" href="https://twitter.com/QgFelipe">
+                        <img src="./assets/iconfinder-social-media-applications-6twitter-4102580_113802.png" alt="">
+                    </a>            
+                </div>
+                <div class="email-nav">
+                    <p>fquiceno1@misena.edu.co</p>
+                </div>
+            </div>
+
+            <!--desktop -navbar-->
+            <div class="hide-mobile-nav">
+                <div class="email-hide-mobile">
+                    <p>fquiceno1@misena.edu.co</p>
+                </div>
+
+                <div class="navegacion-hide-mobile-nav">
+                    <a href="#">Acerca de mi</a>
+                    <a href="#">Portafolio</a>
+                    <a href="#">Contacto</a>           
+                </div>
+
+                <div class="menu-button-hide-mobile-nav">
+                    <button>+</button>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>Seccion 1</section>
-        <section>Seccion 2</section>
-        <section>Seccion 3</section>
+        <section class="presentation-main">
+
+            <div class="profile-image">
+                <img src="./assets/felipe.jpeg" alt="Foto-perfil-felipe">
+            </div>
+
+            <div class="profile-game-letering">
+                <h3 class="screed-1">
+                    <span>Hola bienvenid@, soy Felipe Quiceno Gomez.</span>
+                </h3>
+                <h3 class="screed-2"><span>FullStack developer, te invito a conocer</span></h3>
+                <h3 class="screed-3"><span>mas sobre mi y mi portafolio tecnologico.</span></h3>
+                <h3 class="screed-4"><span>Continua explorando mis proyectos</span></h3>
+                <h3 class="screed-5"><span>seguro te gustarán.</span></h3>
+            </div>
+
+        </section>
+        <section class="portafolio-container">
+            <div class="title">
+                <h1>Proyectos</h1>
+            </div>
+            <div class="content">
+                <div class="porta1">Sistema manejador de exámenes</div>
+                <div class="porta2">Todo list</div>
+                <div class="porta3">En construcción....</div>
+            </div>
+        </section>
     </main>
     <footer>
         Este es un cambio en el footer para verificar el CI de github pages
