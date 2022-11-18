@@ -116,31 +116,36 @@ html{
 .portafolio-container .title{
     font-size: 2rem;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .portafolio-container .content{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
-    width: 350px;
+    width: 400;
 
 }
 .content .porta1{
     width: 100%;
-    height: 200px;
-    background-color: red;
+    height: 250px;
 }
 .content .porta2{
     width: 100%;
-    height: 200px;
-    background-color: yellow;
+    height: 250px;
 }
 .content .porta3{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: blue;
 }
-
+.content .porta1 img{
+    width: 100%;
+    height: 100%;
+}
+.content .porta2 img{
+    width: 100%;
+    height: 100%;
+}
 /*section 3*/
 .contact{
     display: flex;
@@ -165,19 +170,8 @@ html{
 .contact ul li{
     margin-bottom: 40px;
 }
-
-
   
 /*----------------*/
-
-
-
-
-
-
-
-
-
 
 /*Responsive desktop*/
 @media screen and (min-width: 40em){
@@ -241,11 +235,25 @@ html{
     /*Section 2*/
     .portafolio-container .content{
         grid-template-columns: repeat(3,1fr);
-        width: 700PX;
+        width: 900px;
 
     }
+
     .portafolio-container .title{
         margin-bottom: 150px;
+    }
+    .content .porta1{
+        width: 100%;
+        height: 250px;
+    }
+    .content .porta2{
+        width: 100%;
+        height: 250px;
+    }
+    .content .porta3{
+        width: 100%;
+        height: 250px;
+        background-color: blue;
     }
     
 }
