@@ -12,7 +12,6 @@ html{
 
 
 /*Responsive mobile first*/
-
 /*Navbar*/
 .show-mobile-nav{
     display: flex;
@@ -39,6 +38,10 @@ html{
     margin-right: 20px;
     font-size: 1.6rem;
 }
+.email-nav a{
+    color: white;
+    text-decoration: none;
+}
 
 .github img{
     width: 50px;
@@ -52,15 +55,29 @@ html{
     width: 50px;
     height: 100%
 }
+.github :hover{
+    rotate: 90deg;
+    transition: 0.5s;
+  }
+  .linkedin :hover{
+    rotate: 90deg;
+    transition: 0.5s;
+  }
+  .twiter :hover{
+    rotate: 90deg;
+    transition: 0.5s;
+  }
 /*-----------------*/
-
+.social-media-container .social-media{
+    display: none;
+}
 /*Secction 1*/
 .presentation-main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    height: 100vh;
 }
 
 .profile-image{
@@ -70,6 +87,11 @@ html{
     border-radius: 50%;
     margin-bottom: 150px;
     box-shadow: 0.5px 0.5px 80px black;
+}
+.profile-image:hover{
+    width: 250px;
+    height: 250px;
+    transition: 1s;
 }
 .profile-image img{
     width: 100%;
@@ -88,11 +110,13 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
+    background: #1a2e5c;
 }
 .portafolio-container .title{
     font-size: 2rem;
     color: white;
+    margin-bottom: 50px;
 }
 .portafolio-container .content{
     display: grid;
@@ -117,6 +141,32 @@ html{
     background-color: blue;
 }
 
+/*section 3*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    color: white;
+}
+.contact h2 img{
+    width: 30px;
+    height: 30px;
+}
+.contact img {
+    width: 30px;
+    height: 30px;
+}
+.contact a {
+    color: aliceblue;
+}
+.contact ul li{
+    margin-bottom: 40px;
+}
+
+
   
 /*----------------*/
 
@@ -137,7 +187,7 @@ html{
     .hide-mobile-nav{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             position: relative;
             align-items: center;
         
@@ -146,10 +196,20 @@ html{
             background-color: hsl(224, 57%, 20%);
             box-shadow: 0.5px 0.5px 5px black;
     }
-    .email-hide-mobile{
+    /*Social media en desktop*/
+    .social-media-container .social-media{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: 30px;
+        position: fixed;
+        z-index: 1;
+    }
+    .email-hide-mobile a{
         color: white;
         margin-right: 20px;
         font-size: 1.6rem;
+        text-decoration: none;
     }
     .navegacion-hide-mobile-nav a{
         text-decoration: none;
@@ -177,4 +237,15 @@ html{
         color: white;
         font-weight: bolder;
     }
+
+    /*Section 2*/
+    .portafolio-container .content{
+        grid-template-columns: repeat(3,1fr);
+        width: 700PX;
+
+    }
+    .portafolio-container .title{
+        margin-bottom: 150px;
+    }
+    
 }
