@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portafolio</title>
+    <title>Portafolio-Felipe-Quiceno</title>
 </head>
 <body>
     <header>
@@ -96,7 +96,9 @@
                 </div>
                 <div class="porta2">
                     <h2>Sistema exámenes</h2>
-                    <img src="https://live.staticflickr.com/65535/52508587259_b5d069dac1_b.jpg" alt="sistema-examenes">    
+                    <a class="exams-open">
+                        <img src="https://live.staticflickr.com/65535/52508587259_b5d069dac1_b.jpg" alt="sistema-examenes">    
+                    </a>
                 </div>
                 <div class="porta3">
                     <h2>En construccíon...</h2>
@@ -124,12 +126,84 @@
             </ul>
        
         </section>
-        <!--Modal-->
+        <!--Modal - Todo List-->
         <section class="modal">
             <div class="modal-container">
-                <h2 class="modal-title">Bienvenido al sitio !!</h2>
-                <p class="modal-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nulla excepturi repellat eaque minus optio doloremque id veritatis fugit, repellendus, impedit unde voluptas distinctio, nihil voluptates iure aut! In, molestiae?</p>
-                <a class="modal-close">Cerrar modal</a>
+                <h2 class="modal-title">Manejador de tareas</h2>
+                <img src="https://live.staticflickr.com/65535/52507256952_6df46db5f0_b.jpg" alt="image-todoTasks">
+                <div class="icons-container">
+                    <img src="/assets/bootstrap.png" alt="bootstrap icon">
+                    <img src="/assets/html-5.png" alt="htm5-icon">
+                    <img src="/assets/postgre.png" alt="postgresql-icon">
+                    <img src="/assets/typescript.png" alt="typescript-icon">
+                    <img src="/assets/angular.png" alt="angular-icon">
+                    <img src="/assets/java.png" alt="java-icon">
+                    <img src="/assets/spring.png" alt="spring-icon">
+                </div>
+                <p class="modal-paragraph">Sitio para la gestion de tareas personales de un usuario. Las tareas respetan la siguiente tipologia:<br>
+                    - Hogar.<br>
+                    - Trabajo.<br>
+                    - Hábito.<br>
+                    El proyecto soporta una definicón de prioridades de las tareas de usuario creadas. El ámbito de prioridades de tareas es la siguiente:<br>
+                    - Alta.<br>
+                    - Media.<br>
+                    - Baja.<br>
+                    
+                    La solución tambien permite : <br>
+                    - Crear tareas.<br>
+                    - Editar tareas.<br>
+                    - Eliminar tarea.<br>
+                    - Marcar tarea como realizada.<br>
+                     Ademas tenemos dos botones para desplazar hacia arriba o hacia abajo una tarea en la tabla. El proyecto se conecta a una base de datos postgresql.</p>
+                <div class="modal-code">
+                    <a href="https://github.com/F-DV/Personal-task.git">Codigo en Github</a>
+                    <a href="https://personaltasks.netlify.app/">Ir al sitio web</a>
+                </div>
+                <a class="modal-close">Cerrar</a>
+            </div>
+        </section>
+        <!--Modal - Sistema -Exámenes-->
+        <section class="modal-exam">
+            <div class="modal-container">
+                <h2 class="modal-title">Sistema de exámenes</h2>
+                <img src="https://live.staticflickr.com/65535/52508587259_b5d069dac1_b.jpg" alt="image-sistema-exámenes">
+                <div class="icons-container">
+                    <img src="/assets/angular.png" alt="angular-icon">
+                    <img src="/assets/spring.png" alt="spring-icon">
+                    <img src="/assets/java.png" alt="java-icon">
+                    <img src="/assets/typescript.png" alt="typescript-icon">
+                    <img src="/assets/html-5.png" alt="htm5-icon">
+                    <img src="/assets/css-3.png" alt="spring-icon">
+                    <img src="/assets/bootstrap.png" alt="bootstrap icon">
+                    <img src="/assets/mysql.png" alt="postgresql-icon">
+                </div>
+                <p class="modal-paragraph">
+                    Sistema de administración de exámenes con rol de administrador y rol de usuario. Permite registarse como usuario e iniciar sessión.<br>
+                    El sistema permite en el rol de administrador:<br>
+                    - Ver perfil del administrador.<br>
+                    - Agregar categorias.<br>
+                    - Listar categorias disponibles.<br>
+                    - Agregar exámenes.<br>
+                    - Actualizar exámenes.<br>
+                    - Eliminar exámenes.<br>
+                    - Modificar exámenes.<br>
+                    - Activar o desactivar exámanes.<br>
+                    - Agregar preguntas a los exámenes.<br>
+                    - Darle una categoría a un exámen.<br>
+                    -  Actualizar pregunta.<br>
+                    - Eliminar pregunta.<br><br>
+
+                    El rol de usuario permite:<br>
+                    - Ver exámenes activos.<br>
+                    - Ver exámenes por categoría.<br>
+                    - realizar exámen.<br>
+                    - Enviar cuestionario.<br>
+                </p>
+                <div class="modal-code">
+                    <a href="https://github.com/F-DV/Sistema-Examenes.git">Codigo en Github</a>
+                    <a href="#">Ir al sitio web</a>
+                </div>
+                <a class="modal-close-exam">Cerrar</a>
             </div>
         </section>
     </main>

@@ -186,7 +186,7 @@ html{
     margin-bottom: 40px;
 }
   
-/*Modal - to do*/
+/*Modal - todo */
 .modal{
     position: fixed;
     top: 0;
@@ -210,6 +210,8 @@ html{
 
 }
 .modal-container{
+    display: grid;
+    grid-auto-columns: 100%;
     width: 90%;
     max-width: 600px;
     max-height: 90%;
@@ -217,18 +219,37 @@ html{
     margin: auto;
     border-radius: 6px;
     padding: 3em 2.5em;
-    display: grid;
     gap: 1em;
     place-items: center;
-    grid-auto-columns: 100%;
     transform: var(--transform);
     transition: transform .8s;
 }
 .modal-title{
     font-size: 2.5rem;
 }
+.modal-container img{
+    width: 90%;
+    height: 90%;
+}
+.modal-container .icons-container{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.modal-container .icons-container img{
+    width: 30px;
+    height: 30px;
+    
+}
 .modal-paragraph{
+    font-size: 1.2rem;
     margin-bottom: 10px;
+}
+.modal-container .modal-code{
+    display: flex;
+    gap: 20px;
 }
 .modal-close{
     text-decoration: none;
@@ -245,8 +266,42 @@ html{
     background-color: white;
 }
 
-
-
+/*Modal - Exam */
+.modal-exam{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+.modal-exam-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    transition: transform .8s .8s;
+}
+.modal-close-exam{
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.modal-close-exam:hover{
+    color: #F26250;
+    background-color: white;
+}
 /*----------------*/
 
 /*Responsive desktop*/
