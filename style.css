@@ -210,6 +210,7 @@ html{
 
 }
 .modal-container{
+    
     display: grid;
     grid-auto-columns: 100%;
     width: 90%;
@@ -225,33 +226,40 @@ html{
     transition: transform .8s;
 }
 .modal-title{
+    
     font-size: 2.5rem;
 }
 .modal-container img{
+    
     width: 90%;
     height: 90%;
 }
 .modal-container .icons-container{
-    width: 90%;
-    height: 30px;
+    
     display: flex;
-    gap: 20px;
+    flex-direction: row;
     justify-content: center;
+    width: 100%;
+    height: 30px;
+    gap: 5px;
 }
-.modal-container .icons-container img{
+.icons-container img{
     width: 30px;
     height: 30px;
     
 }
 .modal-paragraph{
-    font-size: 1.2rem;
+    
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 .modal-container .modal-code{
+    
     display: flex;
     gap: 20px;
 }
 .modal-close{
+    
     text-decoration: none;
     color: #fff;
     background-color: #F26250;
@@ -384,6 +392,16 @@ html{
     .content .porta3{
         width: 100%;
         height: 200px;
+        
+    }
+    .modal-container .icons-container{
+        width: 100%;
+        height: 50px;
+        gap: 10px;
+    }
+    .icons-container img{
+        width: 50px;
+        height: 50px;
         
     }
     
